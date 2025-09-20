@@ -1,0 +1,55 @@
+{
+    "cloud_run":{
+        "type": "service_account",
+        "project_id": "mistri-472714",
+        "private_key_id": "68886ddd35ba4d05e1983def888a90d0d7b668d3",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrtI0AY0A1eJTf\n7TumCIRbKf4yFHwiXZFSM4jT/laS1PmcRbN5DH82pDRFfkiu7hfd+tKkLqcFcCgq\nIKMMM2P4TQhul6gVbXLtIOk7XUazOfFAL6hKI+ygg1cyW1/wVxUbQltdY6lY46HE\nLEKrW40urMjEODQBdCmp/g08poILeXaRMYEpYyrUwuz97zhoEQkQhD+6Sl+KgFmI\nHXh+HfoptYJ+o5Bfs7pXbWvp0Ima687Oo4t213NCX60F3bDF1Y8/jz9+xmiegIBF\nL8Mnv9HoRtSj+oHgCbma5J4kGbf1qsWvqlH1FgnKHZuSolbB9L2qVuzkj4US6BRK\nLwQvO9eXAgMBAAECggEAFGaCvDGOnuvBMGvEwwDPDO/L0lJpv0GDsxMJZjqZOZ/R\nOlZzsOWhtbHDvh/3bcU/E7Ip1bTvRi+hrgOrq5btgUJRxqYBI+6ZkX/wBgwais/P\nEJO4+HoVMqr4MLT3jJwkF1WGem2NYNDG1wJ1N1vMxedkgR+2WhfdnWNgWjzkRY2K\njU5xYfcMB5zm9RnoXeaz/m2UIE0lz9PUbM6ezLDq7EkC3HyKph4AIMMcfE50NF4d\nGHh5kOh7+e5E9ZT09DJs8q2LttmC23SSU7ew31+kz7Tu5dnvMiKBQKC31jt10RiI\n7X8WCC1BKNGo5uj55O2agPHp9R4oY3AiCBLzNU5HkQKBgQDSTcY5D0a4Qarrr6It\nVn14DGVr8VPfduPt67lu9T8BAvGCk2ZgWYwbIedjUXEMnBcrAAwD0FJqOlYPgQ6p\n6D6/Gixj1+G5fxBal8fyc4Yb1Uyy8W3UtezyAc2I/VfubgSqzPbrA+ZQEUSJRLnG\nHoZgE4zl44RYdkv2C2CpamtYhwKBgQDRA7ggWzG8YQ58Gle2h9nDYUa0r9obX7ez\nR3eHsQYLV6gQxMaPuZhEsFy3B29VtnkxSszr7jDXC0jK+gkvkBFw6ceU3ss/IIJJ\nRit7c2QAf0A01tXTvm6qIq7g+gBE5om27+rESfZkhI/2F9yreDKH6sb5FFbCXYA9\nNYTQoD0ccQKBgAIx5Zu62RYbOVl0X9DxUiXqmzRhNGrkpsRY7XqG/L1Z9oNSXoMq\n7BdsZynWM8PZ7TP5sCZqCjIpobRPuIN1dRIxh70TB7wT42vOobuaERBBTaegdXD+\n5RYxhp+jZUOLymit8vXI+KJlS73TBc1XjDd8fL/5e+wgb/KFc+DQx4YJAoGBAI6D\n6LI3PCxkSUoZdCFDdBoiY+Gj3iW4GDunyTq+W460UCZO5czuEYMUdcNe0G0zJGOV\nyzA7kxWt3g54enbx1tKUtL8vQopikjOAIvnj7hXgrljY+6eLO03KpE9GZ5STVOdl\noz//5n8XXEnCb3aDWIEQdmczlQymUGBr84mFGOYhAoGAS95xh1OJDbLiIFMzFTHc\nioJR/N2OCz54+01DUOeBCiBgGvkpuhxt+IXgf0CbucB+hZWFvPxq0wTDOuRmc7jZ\nS7xpDqYxVq0puHFDiibVEE4MZUEXA62SDYxlTXCNe/1QXxuSk+dy5jnh/X0G4Amo\njg+ycfyNXEc/WNXAkSZl9Xw=\n-----END PRIVATE KEY-----\n",
+        "client_email": "904719874116-compute@developer.gserviceaccount.com",
+        "client_id": "110685123862637225755",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/904719874116-compute%40developer.gserviceaccount.com",
+        "universe_domain": "googleapis.com"
+      },
+      "vertex_ai":{
+        "type": "service_account",
+        "project_id": "mistri-472714",
+        "private_key_id": "f13787812985ddf77fe83608ddd1f3bc1bddae7e",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCyun4HuhHYW+ig\nWr+p2aK9kkYv5LGaKfT5GjP8pM+NPfkqD+SjMcH/wlPJYVWwqL12DeziboHM5jdw\nBhe0KogyYHfFqitfrmlNmc/HmiYOcR0vNRq7OQS1Mu+kiDA8AlRa3P+TsA2HJdQC\nadBpAOUVMaW+YjjXHClikXDa8uk5qatlcW/boYD3B1DXQPuQRZ31CHMrsLIzZUUN\nq9iWo8WFiP9LWkCFSQEKrrua3sgqv4DUjqM8ArOR64LhVU6IQkIi2owluUn83JN5\nMSMRdHcgLADtsUbBTt7rPw9RZ9QAc4RaAtsCsLibnCAszcg4+DPyH6S+vxXYM7x/\nhI7SHd33AgMBAAECggEARagVUmGcbtxzL3vu0v21RXjqzeOtrE3J4gPqWv7IvV13\n7ILBMzFDULCmAwhiYzWAkbAfsKgtAnR/CrP1LQyehDPAulL2EJZjCBF4P2y+hEZl\nf26M+obgZNZzO4awddLamYckPKUSwKdnl4Ex7pqgrb/pvud9C6k4H+hbOZoOd6AY\nE3l4zj/1nRT9HVFq4QCYe/FAYorpOgJyvDCIZb52BKSdiE89HqNpcZ/DE1PSZ418\nrZpIhqNnIv57y380bJ4CXm0AW9w3ZSmhmI31Y15OHRytdYcK3vcWKJS5AatrvXte\nxcmZDp5glZssUOMk1jE+rEBWTubI+nydyl+v9s8AAQKBgQDcedUkjliCD1qozWk1\ni8JWAU8rNakM2q1iOGmp40snMJKfIzfYhjmhVqYjndtGkoeiICcPWBzUsqdcGwlL\nUpg3SeizLWT+GZE4JZ26lfAT0MqaqnmvHl7PNOw0UEFEwgzFJX3IAisfmB21uSCe\nVtvIcqQRM/6Y9ElHJXsInjHd9wKBgQDPhqqVbsDZP87fOGxO3Qx0/RuPfDNtaR5k\nDzeXshhBSkB2Mozfh0NpMcQxFZST3LwMDnqjvKZUMagcK7d6D4iTogvwVZhHJLE4\nTiXhbFiIo/bVElJEzwm/ku9GJK/WIqW6Hz931Av4WY0cIkHiIJd9drZ20xW435wy\nxV2XYHQAAQKBgGOpqyDIO9gnCqtNl2Z+E83+74Ov0Qgffcrth04lkd5YRZ8sM11s\nZ3a4DYgCHpILQMaX1DBKe1XmoGKxUgU7g9VSUp9UQNfgRNXloyQqDQlYE43QzArO\nJrtxx+hp8uca9NzVcsNLv6SbhaqU0drhlp5IvEOOhmMr4kgH+FLP9+jHAoGBAJhL\njJ4zdCU6tXeNMbbCc+Ta5sHq9NbDQQFPRY32reQkOKBFQqq72lW1pvQakTnd0MbM\nTWYiCLJa6rMZxgE2qxUk47wRJLp5C/F1MEl5OJO2OGtvkZ5bjhzgGOaR/9SXAqZP\nTkWDAPHVzj+qSE1Je8MgPpF/IT7WIwwDWUbBCwABAoGAG527e7cIQGgX2Da6JCfc\nKIJcMUkosKUe+FnekwWAkBX4JwDu3NrwnGz5ISSmrD2fVx/utu1Ir9HkH8t65aDw\nvG6pEnFj5XLxdtt29tLPosthB0V6CxoQjNJHHIIe79GzOWV1s5srX4E8mhkuQrPc\nlIziB2hcNNcZxJF7AELODTU=\n-----END PRIVATE KEY-----\n",
+        "client_email": "mistri@mistri-472714.iam.gserviceaccount.com",
+        "client_id": "109415034862676429123",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mistri%40mistri-472714.iam.gserviceaccount.com",
+        "universe_domain": "googleapis.com"
+      },
+      "gemini": {
+        "type": "service_account",
+        "project_id": "mistri-472714",
+        "private_key_id": "3e73596cf154d2f5b3fea472b60a0b416db10074",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDilRP4X5XWf5BC\nhfPfJLim1IodHNhKwghW/ty9X+zrx4+JGLRSrMQlYbUXZVzS1/oumK8JrKtn8G+l\nXnKdo4RX8Xxp8eOCFlQ/Pu6mCfeCvws4KFRRLu1eLY/QnfhWdyQB/fxIEDiwNEeG\nH6h5K3Uehd2klHi7J6TlJ/3vhJOimE6dpfUF89ybLFUk0F8Sdu+7MlGgOhcjMDAc\nB9pdfxmW8AA2/ZXlJp8Nnw+VNK/ykVqv/LauC/kiyU708ZbwVQDu4WBv1biqbTOl\nIDlpmFozCZaEX+XKl+RXSIdgPaYmfZtKdulIziWErGX433WfCPNX6R4jSUovCOp7\nOl70WOmdAgMBAAECggEAIndM114q27sBxay8oPfkArSX4b/Oguiq/hi8mS3rSx5L\nDi6s11qiZ5FKS6nGiegCjW36Sj1ywVfIk94fDy2dZwc7xp3d3p7o58n54VXoyYGo\nAj3YPZUm1EmX88Lj0LtExezNoGSfSuZY7uUH6o6avS7dvTg8eTOZmKYRsYp4LqY0\n/2fPZLSWwPaev4kQC3R/HLPgmF0wCVrjRD3QhrSa93ogChzV4bEKf4++13WlXDzk\nKzaMhhmbrnn/hY1blreUOSUMROMRGVkYj0/Jqq9NEWUR4t71726QUjypqBVjN34t\nsE1sRMnXOdj/pQNSHrsdCFfuSuxpVuxcg/7uzXzzvQKBgQD/22a1g7XnyyTUbiGG\nsMZ9g0x8uBaIYie77+zF5Ir841RLSCeN1dS7petrBKQiGxWHAE36EwnRMXMiN36z\nHL/rxWvwGkKiqOKUcPU7YsJs9wFrJzlVUcbcLFCWEc6xZ/oYfFNPkeuXV92KdVgU\n82xKFRQdT3RlKz3tQl/3UwnDrwKBgQDitX0+ar7hvoGXTsMxu7vVViYMeKTEYoIi\nLIpN54bNbTFAZI35gvuZlh/Lg/GGXzg6TJ4uHk4LfM+P86/tP72UuDr7PKgeL+ny\na8FfZEJGepwNED6Asc/8QfPCcpbUKOt7p2lOUErJ3MjcimluiTiRcb/naIzA+kyV\nNeNy/tCecwKBgQCIIv6QgGdu0UlkesD+ANtsd0tgZTcgFFIeDrhGR6eojXERqW/a\naTeLLOqJg+utdgnLTl8vO6gSliQzxaF1vktkMSSQmfhwwjnlUAE8Ov1Gq1sm37UC\n78NG7ZFneEwpWzDYjHZrtTHM0mS/wlY+t5McDAEq41cEabDGqHWVjKp6YwKBgBi6\n7X+ai1n6uw4zVE2fifzamenwWyDlEgcCTs/yupy8FYxNq8MVC7cUTkGYEgezaWHK\nq9KiEadlJQsx7PX3ZwnLEvwHANvSJDYClSR/vk8L3uv54qeNPf/pfdqvP07Da/Sg\nLXeSgKYGhI6yNpANPfN3shRfLkN6ylHYgAgyTbWLAoGBALWA5b3lIPyUCaGZrUwi\nr4+E0CQjhpXfAU9zTxdWfAI6QYwd+xCRNIRDtDcqwW6H7oN0GFPE+CS2HgKBcqth\n3wJMjdfb36ozfrYmtT81y+B9UN3u2RJIifBpC660Qsd0LEmPYz25iXJaMxIEgRf0\nuV+yAHCnMDl0qM9t5V9g+mFD\n-----END PRIVATE KEY-----\n",
+        "client_email": "gemini-mistri@mistri-472714.iam.gserviceaccount.com",
+        "client_id": "110037179739996730669",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gemini-mistri%40mistri-472714.iam.gserviceaccount.com",
+        "universe_domain": "googleapis.com"
+      },
+      "big_query": {
+        "type": "service_account",
+        "project_id": "mistri-472714",
+        "private_key_id": "29c4a9baffd1ee559b0a6c3d4fab17e27da21e54",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC8tBqPy81bh2Sg\np4eY3bjIQVK68q/L5WzP0CunfT/JQmENUzr3AIvzkhQlKzCGqTWoNeRbKcOgDnLB\nxjx6qXGDerdbQNULoyZ5SdEBI3VfK2SbshfbbQeA96jsDH4AxQolpbbiwnEBh/hS\nHq6Q+gsilhwm+1Ntyaf58TQRwkdSiHCSY0icNNrIShXkSBkrZvc1ul/cu86j0z2l\njbFc5hmx3bzTJGzNr+AVRiLeVoj+OYW2pG6e7U7OhFplg5007Q+45k/Zoi34NsXS\nKNSprVSPtIbCWVNbKYZkmfV9kPxueJJ5zhTsM7Q4B4eCZF7T2bRgPUgXqPpShfoT\nEMQ4KUQXAgMBAAECggEAFAnuLin+z0Lz+SmBOUcGWeGx9t9Rss3UvcbF8/3Vebpe\nUwttHhDFS+LN19qbxxkN9SRv8Qxg1Uzje9dg0cfPoZ40/XBHj3pOWh/wHXZV/vq9\nLtl9NhSAcP4bxqFW+h7ygmf0IWVzma2GPbY7ZHLhHtWg/LTAuc5p0519IYunhkh+\ny++Gx3WkgrQzURP2vJqHx+fvlQT07gQ6z6uqP9FGHpX1u4PilD3aVJsUglwMe4Uy\nTSJazocKuY23nfEflOfmsqwxrVF7fd+p3GqYXH5PKhrHGFRfSvgDdUj31sR1PshW\nibmfnMg1BJz4EtdR1BZE77nALquXrapp/noi7ckQtQKBgQD7pRoz8vyMoxbWv2l5\nZ8PEO9uN82Qg0sJd1vc7zEmc5FOo22YY3n3ozcjLAma8KUyY/BLDFsiBEjEhLeB/\njc63vMOfXxfhFCZiHargyrZc5qxtRX4Rn0leJPTOSPya4ER6IYVATkFRNMdpgl2g\nQmmkkpJ+oKp11XkXK3T+taHobQKBgQC/+CSxdFO6oLIPQlLQX0MH7CRTAem23dez\nEAcdLEgIfwnyXcKgzwxZ9FxJz0yYHgvGXnlSL+wcHo8/xwgf4I7KEYxEBRUOuxSl\n1xbWDdcIay5ZDAWgssKfRX8dGXVtOcMebipJhVOPSgYZ/2L0z1eQA9yiDau4xI42\nwihFvh6UEwKBgAhRHpqU70/enASg8uV2TnwP1mPMpYSIMrBTSHyLdetfiHxONAOi\nZtro4jgDbk3Nt6BexGf6Oso5RbJpB8BveWONM5Hy3KEtv08C2ADx8jED1rMN1urS\nLuSTqBuhQegEfX7j2LmVXIdIjUapblq7ly4/QeQ5fyjB02y2nPlGG4HJAoGBALfD\nAuT31PquvyRKOdoLhq/7xZ3ME/ygCc34BsdPTzkK2uuuAxRKfqlReFKTZN+sy1q9\nrucUxrD4M+o6TTWukSEvgRTPxKOQRCioZ8zJ/NCrQPeuwWheFl2+efrSFw1SoMvt\nav9r6Fwe4Q5b4U81d719ZOOfsIUzamtSmpiAcOcPAoGAJ14gBn6xNvuXrvYtn68Y\nTghab4uoc/eEol01of9KEqFZDBFr4JLU3g/PXzMgMu4V/eCsd1GcaPbnsdI48TaZ\nwuvaVLb6pEhChJ1HAhidJ3m9w10/OT0rHUh/vCe+MZVXEAMs42W1RS+P4CJ9qwec\nJCrX/eR00CviigOphFsWskk=\n-----END PRIVATE KEY-----\n",
+        "client_email": "big-query-mistri@mistri-472714.iam.gserviceaccount.com",
+        "client_id": "117644340240261903629",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/big-query-mistri%40mistri-472714.iam.gserviceaccount.com",
+        "universe_domain": "googleapis.com"
+      }
+      
+}
