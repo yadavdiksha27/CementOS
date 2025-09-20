@@ -1,4 +1,4 @@
-import asyncio,json,logging,random,time
+import asyncio,json,logging,random,time,requests
 import numpy as np
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional
