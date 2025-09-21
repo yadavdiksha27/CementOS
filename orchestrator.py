@@ -445,84 +445,13 @@ Format the response in a user-friendly way with clear sections and actionable in
             return "I can help you with cement production questions. Please try rephrasing your question or ask about specific topics like optimization, clinker quality, or alternative fuels."
 
 async def main():
-    """Main function for testing the orchestrator"""
-    print("🤖 CementOptiMax Orchestrator Starting...")
-    
-    orchestrator = OrchestratorAgent()
-    
-    # Test queries organized by category
-    test_queries = {
-        "TSR Optimization Tests": [
-            "I need to optimize my 3000 TPD cement plant for minimum cost while maintaining quality",
-            "Optimize my cement plant for minimum CO2 emissions with LSF between 92-98%",
-            "What if biomass price increases by 30%?",
-            "Show me a Pareto analysis for cost vs emissions for a 5000 TPD plant",
-            "What's the optimal raw mix for my plant if I want to reduce costs by 15%?"
-        ],
-        "Clinker Quality Tests": [
-            "My kiln is running at 1500°C with 2.5% oxygen. Is this optimal?",
-            "What should I do if my free CaO is 2.3%?",
-            "The flame temperature is 1550°C and CO level is 120 ppm. What adjustments are needed?",
-            "How do I improve clinker quality if my C3S content is too low?",
-            "What's the impact of increasing feed rate by 10% on clinker quality?"
-        ],
-        "Quality Control Tests": [
-            "Analyze this thermal image for abnormal conditions",
-            "Predict f-CaO content based on current DCS data",
-            "What does flying ash in thermal images indicate?",
-            "How accurate is the ResNet50 model for thermal classification?",
-            "Show me the f-CaO prediction confidence levels",
-            "Alert me if abnormal operating conditions are detected"
-        ],
-        "General Knowledge Tests": [
-            "Explain the cement production process",
-            "What are the main factors affecting clinker quality?",
-            "How does alternative fuel usage impact cement chemistry?",
-            "What is the difference between LSF, SM and AM moduli?",
-            "How can I reduce CO2 emissions in my cement plant?"
-        ]
-    }
-    
-    # Run tests by category
-    for category, queries in test_queries.items():
-        print(f"\n{'='*50}")
-        print(f"TESTING CATEGORY: {category}")
-        print(f"{'='*50}")
-        
-        for query in queries:
-            print(f"\n📝 Query: {query}")
-            response = await orchestrator.process_query(query)
-            print(f"🤖 Response: {response[:200]}...")
-            print("-" * 50)
-    
-    # Test TSR service health
-    try:
-        tsr_health_response = requests.get(f"{orchestrator.tsr_endpoint}/health", timeout=2)
-        print(f"\nTSR Service Health: {'✅ ONLINE' if tsr_health_response.status_code == 200 else '❌ OFFLINE'}")
-        if tsr_health_response.status_code == 200:
-            print(f"TSR Response: {tsr_health_response.json()}")
-    except Exception as e:
-        print(f"\nTSR Service Health: ❌ OFFLINE (Error: {str(e)})")
-    
-    # Test Clinker service health if configured
-    clinker_endpoint = "http://localhost:8002"
-    try:
-        clinker_health_response = requests.get(f"{clinker_endpoint}/health", timeout=2)
-        print(f"\nClinker Service Health: {'✅ ONLINE' if clinker_health_response.status_code == 200 else '❌ OFFLINE'}")
-        if clinker_health_response.status_code == 200:
-            print(f"Clinker Response: {clinker_health_response.json()}")
-    except Exception as e:
-        print(f"\nClinker Service Health: ❌ OFFLINE (Error: {str(e)})")
-    
-    # Test Quality service health if configured
-    quality_endpoint = "http://localhost:8003"
-    try:
-        quality_health_response = requests.get(f"{quality_endpoint}/health", timeout=2)
-        print(f"\nQuality Service Health: {'✅ ONLINE' if quality_health_response.status_code == 200 else '❌ OFFLINE'}")
-        if quality_health_response.status_code == 200:
-            print(f"Quality Response: {quality_health_response.json()}")
-    except Exception as e:
-        print(f"\nQuality Service Health: ❌ OFFLINE (Error: {str(e)})")
-    
+    """Main function for testing the orchestrator - REMOVED FOR PRODUCTION"""
+    print("🤖 CementOptiMax Orchestrator - Production Mode")
+    print("Use main.py to start the full CementOS system")
+    print("This file is now imported as a module by main.py")
+
 if __name__ == "__main__":
-    asyncio.run(main())
+    # In production, this should not be run directly
+    # Use main.py instead
+    print("⚠️  Please run 'python main.py' to start the CementOS system")
+    print("This orchestrator is designed to be imported as a module.")
