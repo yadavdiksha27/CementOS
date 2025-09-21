@@ -6,6 +6,7 @@ Simplified async implementation with Gemini Pro integration and function calling
 import asyncio
 import json
 import logging
+import os
 import re
 from typing import Dict, List, Optional, Any
 from datetime import datetime
@@ -115,8 +116,29 @@ Always provide actionable recommendations and explain technical concepts clearly
     def _initialize_vertex_ai(self):
         """Initialize Vertex AI with service account credentials"""
         try:
-            # Load credentials from config.json
-            with open('/Users/himanshimeswal/mistri_paglu/config.json', 'r') as f:
+            # Try to load from environment variables first (better for Cloud Run)
+            project_id = os.getenv('GOOGLE_CLOUD_PROJECT', 'mistri-472714')
+            
+            # Initialize Vertex AI with project ID
+            vertexai.init(project=project_id, location="us-central1")
+            
+            # Initialize the model
+            self.model = GenerativeModel("gemini-1.5-flash-002")
+            
+            logger.info("Vertex AI initialized successfully with Gemini credentials")
+            return
+            
+        except Exception as e:
+            logger.warning(f"Environment-based initialization failed: {e}")
+            
+        try:
+            # Fallback: Load credentials from config.json (use relative path for container compatibility)
+            config_path = os.path.join(os.path.dirname(__file__), 'config.json')
+            if not os.path.exists(config_path):
+                # Try current directory
+                config_path = 'config.json'
+            
+            with open(config_path, 'r') as f:
                 config = json.load(f)
             
             # Use the specific gemini section from the config

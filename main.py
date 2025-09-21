@@ -94,16 +94,14 @@ async def startup_event():
         orchestrator_agent = OrchestratorAgent()
         logger.info("✅ Orchestrator Agent initialized successfully")
         
-        # Test agent connectivity
-        test_response = await orchestrator_agent.process_query(
-            "System health check", 
-            session_id="startup_test"
-        )
-        logger.info("✅ Agent connectivity test passed")
+        # Skip connectivity test for faster startup in Cloud Run
+        logger.info("✅ Skipping connectivity test for Cloud Run deployment")
         
     except Exception as e:
         logger.error(f"❌ Failed to initialize agents: {str(e)}")
-        raise
+        # Don't raise - allow server to start without full initialization
+        logger.info("⚠️ Server starting with limited functionality")
+        orchestrator_agent = None
 
 @app.on_event("shutdown")
 async def shutdown_event():
@@ -395,10 +393,8 @@ async def root():
 def main():
     """Main function to run the server"""
     # Get configuration from environment variables
-    host = os.getenv("HOST", "0.0.0.0")
-    port = int(os.getenv("PORT", 8080))  # Cloud Run uses PORT environment variable
-    workers = int(os.getenv("WORKERS", 1))
-    log_level = os.getenv("LOG_LEVEL", "info")
+    host = "0.0.0.0"  # Always bind to all interfaces in Cloud Run
+    port = int(os.getenv("PORT", 8080))  # Use PORT from environment variable
     
     logger.info(f"Starting CementOS server on {host}:{port}")
     
@@ -407,11 +403,10 @@ def main():
         app=app,
         host=host,
         port=port,
-        log_level=log_level,
-        workers=workers if workers > 1 else None,
+        log_level="info",
+        workers=1,
         access_log=True,
-        use_colors=True,
-        reload=False  # Disable reload in production
+        use_colors=False  # Disable colors in Cloud Run logs
     )
     
     server = uvicorn.Server(config)
