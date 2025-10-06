@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CementOS Design System - Industrial AI Platform Colors */
+
+@layer base {
+  :root {
+    /* Core brand colors */
+    --background: 0 0% 98%;
+    --foreground: 215 25% 15%;
+
+    /* Industrial Blue - Authority, Trust, Technology */
+    --primary: 207 90% 45%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 207 90% 40%;
+    --primary-light: 207 90% 90%;
+
+    /* Energy Orange - Innovation, Optimization */
+    --energy: 36 100% 50%;
+    --energy-foreground: 0 0% 98%;
+    --energy-light: 36 100% 95%;
+
+    /* Success Green - Efficiency, GO */
+    --success: 122 40% 50%;
+    --success-foreground: 0 0% 98%;
+    --success-light: 122 40% 95%;
+
+    /* Alert Red - Critical, Danger, STOP */
+    --danger: 4 90% 58%;
+    --danger-foreground: 0 0% 98%;
+    --danger-light: 4 90% 95%;
+
+    /* Warning Yellow */
+    --warning: 45 95% 55%;
+    --warning-foreground: 215 25% 15%;
+    --warning-light: 45 95% 95%;
+
+    /* Neutral grays */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    --card-border: 215 15% 88%;
+
+    --muted: 215 15% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 215 15% 92%;
+    --accent-foreground: 215 25% 15%;
+
+    --border: 215 15% 88%;
+    --input: 215 15% 88%;
+    --ring: 207 90% 45%;
+
+    /* Status indicators */
+    --status-active: 122 40% 50%;
+    --status-warning: 45 95% 55%;
+    --status-error: 4 90% 58%;
+    --status-offline: 215 15% 60%;
+
+    /* Data visualization gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(207 90% 45%), hsl(207 90% 60%));
+    --gradient-energy: linear-gradient(135deg, hsl(36 100% 50%), hsl(36 100% 65%));
+    --gradient-success: linear-gradient(135deg, hsl(122 40% 50%), hsl(122 40% 65%));
+    
+    /* Shadows and elevations */
+    --shadow-sm: 0 1px 2px 0 hsl(215 25% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(215 25% 15% / 0.1), 0 2px 4px -1px hsl(215 25% 15% / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(215 25% 15% / 0.1), 0 4px 6px -2px hsl(215 25% 15% / 0.05);
+    
+    /* Process flow colors */
+    --process-raw: 45 95% 55%;
+    --process-grinding: 207 90% 45%;
+    --process-preheating: 36 100% 50%;
+    --process-clinker: 4 90% 58%;
+    --process-cooling: 187 100% 45%;
+    --process-storage: 122 40% 50%;
+
+    --radius: 0.5rem;
+
+    /* Legacy compatibility */
+    --secondary: 215 15% 95%;
+    --secondary-foreground: 215 25% 15%;
+    --destructive: 4 90% 58%;
+    --destructive-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom animations for Landing page */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.6);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animation-delay-500 {
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
